@@ -1,0 +1,350 @@
+%用cell导入数据
+for i=2:8125
+    %有毒p=1，无毒e=0
+    if mushrooms{i,1}=='p'
+        mushrooms{i,1}=1;
+    else
+        mushrooms{i,1}=0;
+    end
+    %'cap-shape' b=1,c=2,x=3,f=4,k=5,s=6
+     if mushrooms{i,2}=='b'
+        mushrooms{i,2}=1;
+     elseif mushrooms{i,2}=='c'
+         mushrooms{i,2}=2;
+     elseif mushrooms{i,2}=='x'
+         mushrooms{i,2}=3;
+     elseif mushrooms{i,2}=='f'
+         mushrooms{i,2}=4;
+     elseif mushrooms{i,2}=='k'
+         mushrooms{i,2}=5;
+    else
+        mushrooms{i,2}=6;
+    end
+    %'cap-surface'f=7,g=8,y=9,s=10
+    if mushrooms{i,3}=='f'
+        mushrooms{i,3}=7;
+     elseif mushrooms{i,3}=='g'
+         mushrooms{i,3}=8;
+     elseif mushrooms{i,3}=='y'
+         mushrooms{i,3}=9;
+    else
+        mushrooms{i,3}=10;
+    end
+    %'cap-color'n=11,b=12,c=13,g=14,r=15,p=16,u=17,e=18,w=19,y=20
+     if mushrooms{i,4}=='n'
+        mushrooms{i,4}=11;
+     elseif mushrooms{i,4}=='b'
+         mushrooms{i,4}=12;
+     elseif mushrooms{i,4}=='c'
+         mushrooms{i,4}=13;
+     elseif mushrooms{i,4}=='g'
+         mushrooms{i,4}=14;
+     elseif mushrooms{i,4}=='r'
+         mushrooms{i,4}=15;
+     elseif mushrooms{i,4}=='p'
+         mushrooms{i,4}=16;
+     elseif mushrooms{i,4}=='u'
+         mushrooms{i,4}=17;
+     elseif mushrooms{i,4}=='e'
+         mushrooms{i,4}=18;
+     elseif mushrooms{i,4}=='w'
+         mushrooms{i,4}=19;
+    else
+        mushrooms{i,4}=20;
+    end
+    %'bruises't=21,f=22
+    if mushrooms{i,5}=='t'
+        mushrooms{i,5}=21;
+    else
+        mushrooms{i,5}=22;
+    end
+    %'odor'   almond=a=23	anise=l=24	creosote=c=25	fishy=y=26  f=27
+    %musty=m=28	none=n=29	pungent=p=30	spicy=s=31
+     if mushrooms{i,6}=='a'
+        mushrooms{i,6}=23;
+     elseif mushrooms{i,6}=='l'
+         mushrooms{i,6}=24;
+     elseif mushrooms{i,6}=='c'
+         mushrooms{i,6}=25;
+     elseif mushrooms{i,6}=='y'
+         mushrooms{i,6}=26;
+     elseif mushrooms{i,6}=='f'
+         mushrooms{i,6}=27;
+     elseif mushrooms{i,6}=='m'
+         mushrooms{i,6}=28;
+     elseif mushrooms{i,6}=='n'
+         mushrooms{i,6}=29;
+     elseif mushrooms{i,6}=='p'
+         mushrooms{i,6}=30;
+    else
+        mushrooms{i,6}=31;
+    end
+    %'gill-attachment'a=32,d=33,f=34,n=35
+    v=7;
+    if mushrooms{i,v}=='a'
+        mushrooms{i,v}=32;
+     elseif mushrooms{i,v}=='d'
+         mushrooms{i,v}=33;
+     elseif mushrooms{i,v}=='f'
+         mushrooms{i,v}=34;
+    else
+        mushrooms{i,v}=35;
+    end
+    %'gill-spacing'c=36,w=37,d=38
+    v=8;
+     if mushrooms{i,v}=='c'
+        mushrooms{i,v}=36;
+     elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=37;
+    else
+        mushrooms{i,v}=38;
+    end
+    %'gill-size'b=39, n=40
+    v=9;
+     if mushrooms{i,v}=='b'
+        mushrooms{i,v}=39;
+    else
+        mushrooms{i,v}=40;
+    end
+    %'gill-color'k=41,  n=42,
+    %b=43,h=44,g=45,r=46,o=47,p=48,u=49,e=50,w=51,y=52
+    v=10;
+     if mushrooms{i,v}=='k'
+        mushrooms{i,v}=41;
+     elseif mushrooms{i,v}=='n'
+         mushrooms{i,v}=42;
+     elseif mushrooms{i,v}=='b'
+         mushrooms{i,v}=43;
+     elseif mushrooms{i,v}=='h'
+         mushrooms{i,v}=44;
+     elseif mushrooms{i,v}=='g'
+         mushrooms{i,v}=45;
+     elseif mushrooms{i,v}=='r'
+         mushrooms{i,v}=46;
+     elseif mushrooms{i,v}=='o'
+         mushrooms{i,v}=47;
+     elseif mushrooms{i,v}=='p'
+         mushrooms{i,v}=48;
+     elseif mushrooms{i,v}=='u'
+         mushrooms{i,v}=49;
+     elseif mushrooms{i,v}=='e'
+         mushrooms{i,v}=50;
+     elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=51;
+    else
+        mushrooms{i,v}=52;
+    end
+    %'stalk-shape'e=53,t=54
+    v=11;
+    if mushrooms{i,v}=='e'
+        mushrooms{i,v}=53;
+    else
+        mushrooms{i,v}=54;
+    end
+    %'stalk-root'bulbous=b=55	club=c=56	cup=u=57	equal=e=58
+    %rhizomorphs=z=59	rooted=r=60	missing=?=61
+    v=12;
+     if mushrooms{i,v}=='b'
+        mushrooms{i,v}=55;
+     elseif mushrooms{i,v}=='c'
+         mushrooms{i,v}=56;
+     elseif mushrooms{i,v}=='u'
+         mushrooms{i,v}=57;
+     elseif mushrooms{i,v}=='e'
+         mushrooms{i,v}=58;
+     elseif mushrooms{i,v}=='z'
+         mushrooms{i,v}=59;
+     elseif mushrooms{i,v}=='r'
+         mushrooms{i,v}=60;
+    else
+        mushrooms{i,v}=61;
+    end
+    %'stalk-surface-above-ring'  fibrous=f=62	scaly=y=63	silky=k=64
+    %smooth=s=65
+    v=13;
+     if mushrooms{i,v}=='f'
+        mushrooms{i,v}=62;
+     elseif mushrooms{i,v}=='y'
+         mushrooms{i,v}=63;
+     elseif mushrooms{i,v}=='k'
+         mushrooms{i,v}=64;
+    else
+        mushrooms{i,v}=65;
+    end
+    %'stalk-surface-below-ring' fibrous=f=66	scaly=y=67	silky=k=68
+    %smooth=s=69
+    v=14;
+    if mushrooms{i,v}=='f'
+        mushrooms{i,v}=66;
+     elseif mushrooms{i,v}=='y'
+         mushrooms{i,v}=67;
+     elseif mushrooms{i,v}=='k'
+         mushrooms{i,v}=68;
+    else
+        mushrooms{i,v}=69;
+    end
+    %'stalk-color-above-ring'brown=n=70	buff=b=71	cinnamon=c=72
+    %gray=g=73	orange=o=74	pink=p=75	red=e=76	white=w=77	yellow=y=78
+    v=15;
+    if mushrooms{i,v}=='n'
+        mushrooms{i,v}=70;
+     elseif mushrooms{i,v}=='b'
+         mushrooms{i,v}=71;
+     elseif mushrooms{i,v}=='c'
+         mushrooms{i,v}=72;
+     elseif mushrooms{i,v}=='g'
+         mushrooms{i,v}=73;
+     elseif mushrooms{i,v}=='o'
+         mushrooms{i,v}=74;
+     elseif mushrooms{i,v}=='p'
+         mushrooms{i,v}=75;
+     elseif mushrooms{i,v}=='e'
+         mushrooms{i,v}=76;
+     elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=77;
+    else
+        mushrooms{i,v}=78;
+    end
+    %'stalk-color-below-ring'brown=n=79	buff=b=80	cinnamon=c=81
+    %gray=g=82	orange=o=83	pink=p=84	red=e=85	white=w=86	yellow=y=87
+    v=16;
+    if mushrooms{i,v}=='n'
+        mushrooms{i,v}=79;
+     elseif mushrooms{i,v}=='b'
+         mushrooms{i,v}=80;
+     elseif mushrooms{i,v}=='c'
+         mushrooms{i,v}=81;
+     elseif mushrooms{i,v}=='g'
+         mushrooms{i,v}=82;
+     elseif mushrooms{i,v}=='o'
+         mushrooms{i,v}=83;
+     elseif mushrooms{i,v}=='p'
+         mushrooms{i,v}=84;
+     elseif mushrooms{i,v}=='e'
+         mushrooms{i,v}=85;
+     elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=86;
+    else
+        mushrooms{i,v}=87;
+    end
+    %'veil-type'partial=p=88	universal=u=89
+    v=17;
+    if mushrooms{i,v}=='p'
+        mushrooms{i,v}=88;
+    else
+        mushrooms{i,v}=89;
+    end
+    %'veil-color' brown=n=90	orange=o=91	white=w=92	yellow=y=93
+    v=18;
+    if mushrooms{i,v}=='n'
+        mushrooms{i,v}=90;
+     elseif mushrooms{i,v}=='o'
+         mushrooms{i,v}=91;
+     elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=92;
+    else
+        mushrooms{i,v}=93;
+    end
+    %'ring-number' none=n=94	one=o=95	two=t=96
+    v=19;
+    if mushrooms{i,v}=='n'
+        mushrooms{i,v}=94;
+     elseif mushrooms{i,v}=='o'
+         mushrooms{i,v}=95;
+    else
+        mushrooms{i,v}=96;
+    end
+    %'ring-type'cobwebby=c=97	evanescent=e=98	flaring=f=99	large=l=100
+    %none=n=101	pendant=p=102	sheathing=s=103	zone=z=104
+    v=20;
+     if mushrooms{i,v}=='c'
+         mushrooms{i,v}=97;
+     elseif mushrooms{i,v}=='e'
+         mushrooms{i,v}=98;
+     elseif mushrooms{i,v}=='f'
+         mushrooms{i,v}=99;
+     elseif mushrooms{i,v}=='l'
+         mushrooms{i,v}=100;
+     elseif mushrooms{i,v}=='n'
+         mushrooms{i,v}=101;
+     elseif mushrooms{i,v}=='p'
+         mushrooms{i,v}=102;
+     elseif mushrooms{i,v}=='s'
+         mushrooms{i,v}=103;
+    else
+        mushrooms{i,v}=104;
+    end
+    %'spore-print-color'black=k=105	brown=n=106	buff=b=107	chocolate=h=108
+    %green=r=109	orange=o=110	purple=u=111	white=w=112
+    %yellow=y=113
+    v=21;
+    if mushrooms{i,v}=='k'
+         mushrooms{i,v}=105;
+     elseif mushrooms{i,v}=='n'
+         mushrooms{i,v}=106;
+     elseif mushrooms{i,v}=='b'
+         mushrooms{i,v}=107;
+     elseif mushrooms{i,v}=='h'
+         mushrooms{i,v}=108;
+     elseif mushrooms{i,v}=='r'
+         mushrooms{i,v}=109;
+     elseif mushrooms{i,v}=='o'
+         mushrooms{i,v}=110;
+     elseif mushrooms{i,v}=='u'
+         mushrooms{i,v}=111;
+    elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=112;
+    else
+        mushrooms{i,v}=113;
+    end
+    %'population'abundant=a=114	clustered=c=115	numerous=n=116
+    %scattered=s=117	several=v=118	solitary=y=119
+    v=22;
+    if mushrooms{i,v}=='a'
+         mushrooms{i,v}=114;
+     elseif mushrooms{i,v}=='c'
+         mushrooms{i,v}=115;
+     elseif mushrooms{i,v}=='n'
+         mushrooms{i,v}=116;
+     elseif mushrooms{i,v}=='s'
+         mushrooms{i,v}=117;
+     elseif mushrooms{i,v}=='v'
+         mushrooms{i,v}=118;
+    else
+        mushrooms{i,v}=119;
+    end
+    %'habitat' grasses=g=120	leaves=l=121	meadows=m=122	paths=p=123
+    %urban=u=124	waste=w=125	woods=d=126
+    v=23;
+    if mushrooms{i,v}=='g'
+         mushrooms{i,v}=120;
+     elseif mushrooms{i,v}=='l'
+         mushrooms{i,v}=121;
+     elseif mushrooms{i,v}=='m'
+         mushrooms{i,v}=122;
+     elseif mushrooms{i,v}=='p'
+         mushrooms{i,v}=123;
+     elseif mushrooms{i,v}=='u'
+         mushrooms{i,v}=124;
+    elseif mushrooms{i,v}=='w'
+         mushrooms{i,v}=125;
+    else
+        mushrooms{i,v}=126;
+    end
+end
+mushrooms(1,:) = [];%删除第一行
+%save mushrooms_ascii.dat -ascii mushrooms
+T = cell2table(mushrooms);
+writetable(T,'mushrooms_ascii.dat')
+%%%%
+data=cell2mat(mushrooms);
+%data=importdata('C:/Users/sookie/Desktop/乱/sookie/mushrooms_ascii.dat');
+train_data=data(2:4874,2:23); %选百分之60作为训练集
+train_label=data(2:4874,1); %列向量
+test_data=data(4874:8124,2:23); %选百分之40作为测试集
+test_label=data(4874:8124,1); 
+%自编码器
+X =train_data;
+autoenc = trainAutoencoder(X,'EncoderTransferFunction','satlin','DecoderTransferFunction','purelin');
+XReconstructed = predict(autoenc,X);
+
